@@ -11,7 +11,7 @@ class Application
         songs.update(data)
       else 
         response.write({message: "Invalid data"}.to_json)
-        response.status = 404
+        response.status = 422
       end
 
     elsif request.path.match(/songs/) && request.delete?
