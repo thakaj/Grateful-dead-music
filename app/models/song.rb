@@ -9,7 +9,7 @@ class Song < ActiveRecord::Base
     end
 
     def self.find_by_path(path)
-        id = path.path.split("/notes/")[1].to_i
+        id = path.split("/songs/")[1].to_i
         Song.find_by_id(id)
     end
 
