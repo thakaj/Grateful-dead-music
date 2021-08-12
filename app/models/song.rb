@@ -1,11 +1,10 @@
 class Song < ActiveRecord::Base
-    belongs_to :show
-    has_one :band, through: :show
+    has_one :band
     
     def self.render_all
         self.all.map { |s| {
           name: s.name,
-          shows_id: s.show_id
+          band_id: s.band_id
         }}
     end
 

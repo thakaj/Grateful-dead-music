@@ -1,0 +1,22 @@
+
+
+The model i deleted because i felt it didnt serve any purpose
+class Show < ActiveRecord::Base
+    has_many :songs
+    belongs_to :band
+end
+
+
+
+this is the table i created for the model i deleted
+
+class CreateShow < ActiveRecord::Migration[6.1]
+  def change
+    create_table :shows do |t| 
+      t.string :date
+      t.belongs_to :band
+      t.timestamps
+    
+    end
+  end
+end
