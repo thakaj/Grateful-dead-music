@@ -1,5 +1,5 @@
 class Song < ActiveRecord::Base
-    has_one :band
+    belongs_to :band
     
     def self.render_all
         self.all.map { |s| {
