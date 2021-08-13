@@ -42,7 +42,7 @@ class Application
       
   
 
-        response.write({songs: Song.render_all}.to_json)
+        response.write({songs: Song.all}.to_json)
         response.status = 200
 
       else
