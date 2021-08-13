@@ -1,6 +1,6 @@
-# Grateful-dead-
+# Grateful-dead-music
 
-Grateful Dead Music
+Grateful Dead Music An App for music lovers
 
 This is a simple website as well as a simple backend, that allows the user to create, delete, and see entries from the backend. This file is the ruby backend that contains all of my code for my projoect. This repository is also the source needed to run backend server.
 
